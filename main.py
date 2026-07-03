@@ -4,9 +4,9 @@ from PIL import Image
 
 #Tensorflow Model Prediction
 def model_prediction(test_image):
-    model = keras.models.load_model('trained_model.h5')
-    image = keras.preprocessing.image.load_img(test_image,target_size=(128, 128))
-    input_arr = keras.preprocessing.image.img_to_array(image)
+    model = tf.keras.models.load_model('trained_model.h5')
+    image = tf.keras.preprocessing.image.load_img(test_image,target_size=(128, 128))
+    input_arr = tf.keras.preprocessing.image.img_to_array(image)
     input_arr = np.array([input_arr]) #Convert single image to a batch
     prediction = model.predict(input_arr)
     result_index = np.argmax(prediction)
