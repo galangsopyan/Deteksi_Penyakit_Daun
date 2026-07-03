@@ -1,6 +1,5 @@
 import streamlit as st
 import numpy as np
-import tensorflow 
 from PIL import Image
 
 #Tensorflow Model Prediction
