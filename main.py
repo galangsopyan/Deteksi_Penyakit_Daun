@@ -1,5 +1,5 @@
 import streamlit as st
-import tensorflow as tf
+import tensorflow 
 import numpy as np
 
 #Tensorflow Model Prediction
